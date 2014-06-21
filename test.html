@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SimpleForm Test</title>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="SimpleForm.js"></script>
+<link href="simpleform.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+    .good_input{border:1px solid #00ff00;}
+	.error_input{border:1px solid #ff0000;}
+	input{display: block;
+height: 24px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857;
+color: #555;
+background-color: #FFF;
+background-image: none;
+border: 1px solid #CCC;
+border-radius: 4px;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;}
+</style>
+</head>
+
+<body>
+<h1>SimpleForm Tests</h1>
+
+For Detail, Please see the detail of README.md.
+
+Demo:
+<form method="post" class="simpleform">
+<input type="text" regex="email" valid-css="good_input" unvalid-css="error_input" empty="please fill in email address" unvalid="Unvalid Email Address">
+</form>
+<script type="text/javascript">
+    $(function(){
+	    $(".simpleform").simpleForm();
+	});
+
+</script>
+
+
+</body>
+</html>
